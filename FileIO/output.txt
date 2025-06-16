@@ -1,0 +1,28 @@
+
+Word Frequency Count:
+---------------------
+file: 3
+word: 3
+it: 3
+is: 2
+a: 2
+frequency: 2
+here: 1
+for: 1
+testing: 1
+work: 1
+how: 1
+often: 1
+appears: 1
+in: 1
+the: 1
+should: 1
+count: 1
+each: 1
+and: 1
+write: 1
+back: 1
+to: 1
+another: 1
+hopefully: 1
+works: 1
