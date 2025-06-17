@@ -10,33 +10,7 @@ class contact:
     def __str__(self):
         return (f"Name: {self.name}\nPhone: {self.phone}\nRelationship: {self.relationship}\n")
     
-    # getters and setters for name, phone, and relationship
-    @property
-    def name(self):
-        return self.name
-    
-    @name.setter
-    def name(self, name):
-        self.name = name
-        
-    @property
-    def phone(self):
-        return self.phone
-    
-    @phone.setter
-    def phone(self, phone):
-        if phone < 0 or len(str(phone)) < 10:
-            return "Invalid Phone Number"
-        self.phone = phone
-    
-    @property
-    def relationship(self):
-        return self.relationship
-    
-    @relationship.setter
-    def relationship(self, relationship):
-        self.relationship = relationship
-    
+    # convert data into a dictionary for easy access
     def to_dict(self):
         return {
             'name': self.name,
@@ -44,6 +18,7 @@ class contact:
             'relationship': self.relationship
         }
     
+    # return data given in the form of a dict by using class method
     @classmethod
     def from_dict(cls, data):
         return cls(
